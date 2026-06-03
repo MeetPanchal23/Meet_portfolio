@@ -3,53 +3,55 @@ import { ArrowRight, Download, Mail } from 'lucide-react';
 import { Github, Linkedin } from './BrandIcons';
 import { personalInfo } from '../data';
 
+const roles = [
+  "Full Stack Developer",
+  "Software Developer",
+  "Frontend Developer",
+  ".NET Developer",
+  "Python Developer",
+  "Django Developer",
+  "React Developer"
+];
+
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [roleIndex, setRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const roles = [
-    "Junior Full Stack Developer",
-    "React.js Specialist",
-    "Python & Django Developer",
-    "C# & .NET Developer"
-  ];
-
   const typingSpeed = 100;
   const deletingSpeed = 50;
   const delayBetweenRoles = 2000;
 
   useEffect(() => {
-    let timer;
     const currentRole = roles[roleIndex];
+    let timer;
 
-    if (isDeleting) {
-      timer = setTimeout(() => {
-        setDisplayText(currentRole.substring(0, charIndex - 1));
-        setCharIndex(prev => prev - 1);
-      }, deletingSpeed);
+    if (!isDeleting) {
+      if (charIndex < currentRole.length) {
+        timer = setTimeout(() => {
+          setDisplayText(currentRole.substring(0, charIndex + 1));
+          setCharIndex(prev => prev + 1);
+        }, typingSpeed);
+      } else {
+        timer = setTimeout(() => {
+          setIsDeleting(true);
+        }, delayBetweenRoles);
+      }
     } else {
-      timer = setTimeout(() => {
-        setDisplayText(currentRole.substring(0, charIndex + 1));
-        setCharIndex(prev => prev + 1);
-      }, typingSpeed);
-    }
-
-    if (!isDeleting && charIndex === currentRole.length) {
-      timer = setTimeout(() => setIsDeleting(true), delayBetweenRoles);
-    } else if (isDeleting && charIndex === 0) {
-      setIsDeleting(false);
-      setRoleIndex((prev) => (prev + 1) % roles.length);
+      if (charIndex > 0) {
+        timer = setTimeout(() => {
+          setDisplayText(currentRole.substring(0, charIndex - 1));
+          setCharIndex(prev => prev - 1);
+        }, deletingSpeed);
+      } else {
+        setIsDeleting(false);
+        setRoleIndex(prev => (prev + 1) % roles.length);
+      }
     }
 
     return () => clearTimeout(timer);
   }, [charIndex, isDeleting, roleIndex]);
-
-  // Handle printing page (which triggers print resume styles)
-  const handlePrint = () => {
-    window.print();
-  };
 
   return (
     <section id="hero" className="hero-section">
@@ -77,14 +79,14 @@ const Hero = () => {
             <a href="#projects" className="btn btn-primary">
               View Work <ArrowRight size={18} />
             </a>
-            <button onClick={handlePrint} className="btn btn-secondary">
-              Print/Save Resume <Download size={18} />
-            </button>
+            <a href={personalInfo.resumeUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              View Resume <Download size={18} />
+            </a>
           </div>
 
           <div className="hero-socials">
             <span className="socials-label">Connect:</span>
-            <a href={`mailto:${personalInfo.email}`} className="social-icon-link" title="Email Meet">
+            <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${personalInfo.email}`} target="_blank" rel="noopener noreferrer" className="social-icon-link" title="Email Meet">
               <Mail size={20} />
             </a>
             <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="social-icon-link" title="GitHub Profile">

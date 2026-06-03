@@ -5,8 +5,9 @@ export const personalInfo = {
   email: "panchalmeet23450@gmail.com",
   phone: "+91-8160182439",
   summary: "Motivated Junior Full Stack Developer with hands-on experience building end-to-end web applications using React.js, Python, Django, C#, .NET, and SQL. Proficient in designing REST APIs, implementing CRUD operations, and integrating frontend and backend systems. Completed a Django Web Development certification and delivered full-stack projects across two internships. Eager to contribute to scalable, production-grade applications in an Agile environment.",
-  github: "https://github.com", // Placeholder to be replaced
-  linkedin: "https://linkedin.com", // Placeholder to be replaced
+  github: "https://github.com/MeetPanchal23",
+  linkedin: "https://www.linkedin.com/in/meetpanchal2308", // Placeholder to be replaced
+  resumeUrl: "https://drive.google.com/file/d/1c-loPEDAtOaVkSKOb30R_a_NLWpsivHo/view?usp=sharing"
 };
 
 export const skillCategories = [
@@ -70,36 +71,25 @@ export const experience = [
 
 export const projects = [
   {
-    title: "MERN Todo Application",
-    description: "A comprehensive task management system featuring custom category tagging, priority sorting, status statistics, and dynamic local theme toggling. Implements robust REST APIs, client-side React hooks, and persistent database storage.",
-    category: "React",
-    tags: ["React.js", "Express", "Node.js", "MongoDB", "CSS3"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://github.com"
-  },
-  {
-    title: "Django E-Commerce REST Engine",
-    description: "A production-grade RESTful API designed with Django REST Framework, featuring secure JWT authentication, relational product schemas, advanced searching/filtering capabilities, and Django ORM query optimization.",
+    title: "Backpack",
+    description: "A custom web application built with Python and Django, featuring secure user authentication, database models for items management, and a clean, responsive template-driven user interface.",
     category: "Django",
-    tags: ["Python", "Django", "Django REST Framework", "SQL", "JWT"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://github.com"
+    tags: ["Python", "Django", "SQLite", "HTML5", "CSS3"],
+    githubUrl: "https://github.com/MeetPanchal23/Backpack"
   },
   {
-    title: "Enterprise Inventory Portal",
-    description: "An internal management application featuring a React-based frontend integrated with an ASP.NET / C# backend. Manages massive inventory transactions with robust transactional consistency in SQL.",
+    title: "Inventory Management System",
+    description: "An enterprise-grade inventory and order management system featuring a React-based frontend and an ASP.NET Core Web API backend. Built using Dapper for high-performance database queries in SQL Server, JWT role-based authentication, and custom AES-256 payload encryption/decryption middleware for secure API communications.",
     category: ".NET",
-    tags: ["C#", "ASP.NET Core", "React.js", "SQL Server", "EF Core"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://github.com"
+    tags: ["C#", "ASP.NET Core", "Dapper", "SQL Server", "AES Encryption", "React.js"],
+    githubUrl: "https://github.com/MeetPanchal23/InventoryManagementSystem"
   },
   {
     title: "DevTerminal Interactive Portfolio",
     description: "A terminal-themed interactive developer portfolio featuring a commands interpreter, simulated terminal file system, search parameters parsing, and animated CRT scanline visuals.",
     category: "React",
     tags: ["React.js", "HTML5", "CSS3", "Vite", "Lucide Icons"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://github.com"
+    githubUrl: "https://github.com/MeetPanchal23/Meet_portfolio"
   }
 ];
 
@@ -113,8 +103,8 @@ export const education = [
   {
     degree: "H.S.C. — Commerce (GSHSEB)",
     institution: "Shree V.K. Vidhyalay U.M. Shala, Ahmedabad",
-    duration: "Graduated: Mar 2023",
-    details: "Result: 75.29%"
+    duration: "Mar 2023",
+    details: "75.29%"
   }
 ];
 

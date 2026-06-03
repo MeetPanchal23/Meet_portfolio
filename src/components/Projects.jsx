@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ExternalLink } from 'lucide-react';
 import { Github } from './BrandIcons';
 import { projects } from '../data';
 
@@ -60,16 +59,9 @@ const Projects = () => {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="project-link"
+                style={{ width: '100%', justifyContent: 'center' }}
               >
-                <Github size={18} /> Code
-              </a>
-              <a 
-                href={project.liveUrl} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="project-link link-primary"
-              >
-                <ExternalLink size={18} /> Live Demo
+                <Github size={18} /> View Repository
               </a>
             </div>
           </article>

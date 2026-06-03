@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="footer-right">
           <h4 className="footer-title">Connect</h4>
           <div className="footer-socials">
-            <a href={`mailto:${personalInfo.email}`} className="footer-social-link" title="Email">
+            <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${personalInfo.email}`} target="_blank" rel="noopener noreferrer" className="footer-social-link" title="Email">
               <Mail size={18} />
             </a>
             <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="footer-social-link" title="GitHub">

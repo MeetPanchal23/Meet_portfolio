@@ -71,7 +71,7 @@ const Contact = () => {
           <p className="panel-desc">Feel free to reach out directly or use the contact form.</p>
 
           <div className="contact-details">
-            <a href={`mailto:${personalInfo.email}`} className="contact-detail-item">
+            <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${personalInfo.email}`} target="_blank" rel="noopener noreferrer" className="contact-detail-item">
               <div className="icon-box bg-glow-primary">
                 <Mail size={20} />
               </div>

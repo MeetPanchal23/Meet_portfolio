@@ -8,11 +8,13 @@ const Terminal = () => {
     { text: "Type 'help' to view the list of available commands.", type: 'system' }
   ]);
   const [inputValue, setInputValue] = useState('');
-  const terminalEndRef = useRef(null);
+  const terminalBodyRef = useRef(null);
   const inputRef = useRef(null);
 
   const scrollToBottom = () => {
-    terminalEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (terminalBodyRef.current) {
+      terminalBodyRef.current.scrollTop = terminalBodyRef.current.scrollHeight;
+    }
   };
 
   useEffect(() => {
@@ -65,9 +67,9 @@ const Terminal = () => {
             });
             break;
           case 'resume':
-            newHistory.push({ text: "Opening system print/save dialog...", type: 'system' });
+            newHistory.push({ text: "Opening professional PDF resume in a new tab...", type: 'system' });
             setTimeout(() => {
-              window.print();
+              window.open(personalInfo.resumeUrl, '_blank');
             }, 500);
             break;
           case 'clear':
@@ -111,7 +113,7 @@ const Terminal = () => {
         </div>
 
         {/* Terminal Screen Container */}
-        <div className="terminal-body">
+        <div ref={terminalBodyRef} className="terminal-body">
           <div className="terminal-scanline"></div>
           
           <div className="terminal-history">
@@ -139,7 +141,6 @@ const Terminal = () => {
               aria-label="Terminal input"
             />
           </div>
-          <div ref={terminalEndRef} />
         </div>
       </div>
     </section>
