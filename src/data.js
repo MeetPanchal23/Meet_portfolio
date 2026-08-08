@@ -4,9 +4,9 @@ export const personalInfo = {
   location: "Ahmedabad, Gujarat, India",
   email: "panchalmeet23450@gmail.com",
   phone: "+91-8160182439",
-  summary: "Motivated Junior Full Stack Developer with hands-on experience building end-to-end web applications using React.js, Python, Django, C#, .NET, and SQL. Proficient in designing REST APIs, implementing CRUD operations, and integrating frontend and backend systems. Completed a Django Web Development certification and delivered full-stack projects across two internships. Eager to contribute to scalable, production-grade applications in an Agile environment.",
+  summary: "Motivated Junior Full Stack Developer with hands-on experience building end-to-end web applications using React.js, Node.js, Express.js, Python, Django, C#, .NET, and SQL. Proficient in designing REST APIs, implementing CRUD operations, and integrating frontend and backend systems with relational databases. Completed a Django Web Development certification and delivered full-stack projects across internships and practical web applications. Eager to contribute to scalable, production-grade applications in an Agile environment.",
   github: "https://github.com/MeetPanchal23",
-  linkedin: "https://www.linkedin.com/in/meetpanchal2308", // Placeholder to be replaced
+  linkedin: "https://www.linkedin.com/in/meetpanchal2308",
   resumeUrl: "https://drive.google.com/file/d/1c-loPEDAtOaVkSKOb30R_a_NLWpsivHo/view?usp=sharing"
 };
 
@@ -15,27 +15,28 @@ export const skillCategories = [
     name: "Frontend Development",
     skills: [
       { name: "React.js", level: 90 },
-      { name: "JavaScript", level: 85 },
+      { name: "JavaScript (ES6+)", level: 88 },
       { name: "HTML5 & CSS3", level: 90 },
-      { name: "Bootstrap", level: 85 }
+      { name: "Bootstrap & Responsive UI", level: 85 }
     ]
   },
   {
     name: "Backend Development",
     skills: [
-      { name: "Python", level: 80 },
-      { name: "Django", level: 85 },
-      { name: "C#", level: 75 },
-      { name: "ASP.Net", level: 75 },
-      { name: "REST APIs", level: 85 }
+      { name: "Node.js & Express.js", level: 85 },
+      { name: "Python & Django", level: 85 },
+      { name: "C# & ASP.NET", level: 78 },
+      { name: "RESTful APIs & MVC", level: 88 },
+      { name: "JWT & Role-Based Auth", level: 85 }
     ]
   },
   {
     name: "Database & Tools",
     skills: [
-      { name: "SQL", level: 80 },
-      { name: "Django ORM", level: 85 },
-      { name: "Git & Version Control", level: 80 }
+      { name: "SQL (SQLite / SQL Server)", level: 85 },
+      { name: "Relational Schema & Queries", level: 85 },
+      { name: "Django ORM & Dapper", level: 82 },
+      { name: "Git & Version Control", level: 85 }
     ]
   }
 ];
@@ -71,11 +72,11 @@ export const experience = [
 
 export const projects = [
   {
-    title: "Backpack",
-    description: "A custom web application built with Python and Django, featuring secure user authentication, database models for items management, and a clean, responsive template-driven user interface.",
-    category: "Django",
-    tags: ["Python", "Django", "SQLite", "HTML5", "CSS3"],
-    githubUrl: "https://github.com/MeetPanchal23/Backpack"
+    title: "Job Application Management System",
+    description: "A full-stack recruitment and job application tracking platform with Role-Based Access Control (Candidate vs Recruiter/Admin). Built with React.js, Node.js, Express.js, and relational SQL queries. Features live keyword and location search, duplicate-safe 1-click applications, recruiter metrics dashboard with real-time SQL aggregate counters, complete job posting CRUD, and candidate status review workflows (Pending/Accepted/Rejected).",
+    category: "React",
+    tags: ["React.js", "Node.js", "Express.js", "SQL", "JWT Auth", "REST APIs", "MVC", "RBAC"],
+    githubUrl: "https://github.com/MeetPanchal23/Job-Application"
   },
   {
     title: "Inventory Management System",
@@ -83,6 +84,13 @@ export const projects = [
     category: ".NET",
     tags: ["C#", "ASP.NET Core", "Dapper", "SQL Server", "AES Encryption", "React.js"],
     githubUrl: "https://github.com/MeetPanchal23/InventoryManagementSystem"
+  },
+  {
+    title: "Backpack",
+    description: "A custom web application built with Python and Django, featuring secure user authentication, database models for items management, and a clean, responsive template-driven user interface.",
+    category: "Django",
+    tags: ["Python", "Django", "SQLite", "HTML5", "CSS3"],
+    githubUrl: "https://github.com/MeetPanchal23/Backpack"
   },
   {
     title: "DevTerminal Interactive Portfolio",

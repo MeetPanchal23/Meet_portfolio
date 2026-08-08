@@ -21,9 +21,9 @@ const About = () => {
             and modern web architectures.
           </p>
           <p className="about-text">
-            My development journey is driven by practical problem-solving. Over two key internships, 
-            I built end-to-end features using both <strong>Python/Django</strong> and <strong>C#/.NET</strong> ecosystems, 
-            connecting them to modern <strong>React.js</strong> frontends. I love bridging backend strength with beautiful, accessible frontend experiences.
+            My development journey is driven by practical problem-solving. Across key internships and full-stack project builds, 
+            I developed end-to-end applications using <strong>React.js, Node.js, Express.js, Python/Django</strong> and <strong>C#/.NET</strong> ecosystems, 
+            connecting them to robust relational SQL databases. I love bridging powerful backend APIs with clean, accessible frontend experiences.
           </p>
 
           <div className="info-chips">

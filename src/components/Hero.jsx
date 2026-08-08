@@ -5,12 +5,12 @@ import { personalInfo } from '../data';
 
 const roles = [
   "Full Stack Developer",
+  "React & Node.js Developer",
+  "Backend & API Developer",
   "Software Developer",
   "Frontend Developer",
   ".NET Developer",
-  "Python Developer",
-  "Django Developer",
-  "React Developer"
+  "Python & Django Developer"
 ];
 
 const Hero = () => {
@@ -121,8 +121,8 @@ const Hero = () => {
                     &nbsp;&nbsp;name: <span className="code-string">"{personalInfo.name}"</span>,<br />
                     &nbsp;&nbsp;role: <span className="code-string">"Full Stack Developer"</span>,<br />
                     &nbsp;&nbsp;skills: [<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-string">"React.js"</span>, <span className="code-string">"Python"</span>, <span className="code-string">"Django"</span>,<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-string">"C#"</span>, <span className="code-string">".NET Core"</span>, <span className="code-string">"SQL"</span><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-string">"React.js"</span>, <span className="code-string">"Node.js"</span>, <span className="code-string">"Express"</span>,<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-string">"Python"</span>, <span className="code-string">"Django"</span>, <span className="code-string">"C#"</span>, <span className="code-string">".NET"</span>, <span className="code-string">"SQL"</span><br />
                     &nbsp;&nbsp;],<br />
                     &nbsp;&nbsp;experience: <span className="code-number">2</span> /* internships */,<br />
                     &nbsp;&nbsp;location: <span className="code-string">"Ahmedabad, IN"</span>,<br />
@@ -140,6 +140,7 @@ const Hero = () => {
             
             {/* Tech Float Elements */}
             <div className="tech-badge badge-react">React.js</div>
+            <div className="tech-badge badge-node">Node.js</div>
             <div className="tech-badge badge-django">Django</div>
             <div className="tech-badge badge-dotnet">.NET Core</div>
           </div>

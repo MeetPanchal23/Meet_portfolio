@@ -5,11 +5,14 @@ import { projects } from '../data';
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   
-  const categories = ['All', 'React', 'Django', '.NET'];
+  const categories = ['All', 'React', 'Node.js', 'Django', '.NET'];
 
   const filteredProjects = activeFilter === 'All' 
     ? projects 
-    : projects.filter(p => p.category === activeFilter);
+    : projects.filter(p => 
+        p.category.toLowerCase() === activeFilter.toLowerCase() ||
+        p.tags.some(t => t.toLowerCase().includes(activeFilter.toLowerCase()))
+      );
 
   return (
     <section id="projects" className="projects-section reveal">
