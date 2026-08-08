@@ -7,7 +7,7 @@ export const personalInfo = {
   summary: "Motivated Junior Full Stack Developer with hands-on experience building end-to-end web applications using React.js, Node.js, Express.js, Python, Django, C#, .NET, and SQL. Proficient in designing REST APIs, implementing CRUD operations, and integrating frontend and backend systems with relational databases. Completed a Django Web Development certification and delivered full-stack projects across internships and practical web applications. Eager to contribute to scalable, production-grade applications in an Agile environment.",
   github: "https://github.com/MeetPanchal23",
   linkedin: "https://www.linkedin.com/in/meetpanchal2308",
-  resumeUrl: "https://drive.google.com/file/d/1c-loPEDAtOaVkSKOb30R_a_NLWpsivHo/view?usp=sharing"
+  resumeUrl: "https://drive.google.com/file/d/1sCtq239T4NsWskpNiY3VDH3d7qZavRsq/view?usp=drive_link"
 };
 
 export const skillCategories = [
