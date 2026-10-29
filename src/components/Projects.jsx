@@ -6,7 +6,7 @@ import { projects } from '../data';
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   
-  const categories = ['All', 'Laravel', 'PHP', 'React', 'Django', '.NET'];
+  const categories = ['All', 'Laravel', 'React', 'Django', '.NET'];
 
   const filteredProjects = activeFilter === 'All' 
     ? projects 

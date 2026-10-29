@@ -103,9 +103,9 @@ export const projects = [
   },
   {
     title: "Mehta Sweet Mart",
-    description: "An authentic confectionery brand storefront and customer portal developed with PHP and MySQL. Features dynamic catalog browsing, corporate order inquiries, optimized asset delivery, and cross-browser responsiveness.",
-    category: "PHP",
-    tags: ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3", "Git"],
+    description: "An authentic confectionery brand storefront and customer portal developed with PHP, Laravel, and MySQL. Features dynamic catalog browsing, corporate order inquiries, optimized asset delivery, and cross-browser responsiveness.",
+    category: "Laravel",
+    tags: ["PHP", "Laravel", "MySQL", "JavaScript", "HTML5", "CSS3", "Git"],
     liveUrl: "https://mehtasweetmart.com/",
     isLive: true
   },
