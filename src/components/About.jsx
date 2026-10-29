@@ -21,9 +21,9 @@ const About = () => {
             and modern web architectures.
           </p>
           <p className="about-text">
-            My development journey is driven by practical problem-solving. Across key internships and full-stack project builds, 
-            I developed end-to-end applications using <strong>React.js, Node.js, Express.js, Python/Django</strong> and <strong>C#/.NET</strong> ecosystems, 
-            connecting them to robust relational SQL databases. I love bridging powerful backend APIs with clean, accessible frontend experiences.
+            My development journey is driven by practical problem-solving. Working on live production platforms and developer roles, 
+            I develop end-to-end applications using <strong>PHP, Laravel, MySQL, React.js, Node.js, Express.js, Python/Django</strong> and <strong>C#/.NET</strong> ecosystems, 
+            connecting them to robust relational databases with Git version control. I love bridging powerful backend APIs with clean, fluid, and responsive frontend experiences.
           </p>
 
           <div className="info-chips">
@@ -41,13 +41,13 @@ const About = () => {
         <div className="about-stats">
           <div className="stat-card glass-card">
             <Briefcase size={28} className="stat-icon text-primary" />
-            <h4 className="stat-number">2</h4>
-            <p className="stat-label">Internships Completed</p>
+            <h4 className="stat-number">3+</h4>
+            <p className="stat-label">Production Client Sites</p>
           </div>
 
           <div className="stat-card glass-card">
             <Award size={28} className="stat-icon text-secondary" />
-            <h4 className="stat-number">10+</h4>
+            <h4 className="stat-number">12+</h4>
             <p className="stat-label">Technologies Mastered</p>
           </div>
 

@@ -4,7 +4,7 @@ export const personalInfo = {
   location: "Ahmedabad, Gujarat, India",
   email: "panchalmeet23450@gmail.com",
   phone: "+91-8160182439",
-  summary: "Motivated Junior Full Stack Developer with hands-on experience building end-to-end web applications using React.js, Node.js, Express.js, Python, Django, C#, .NET, and SQL. Proficient in designing REST APIs, implementing CRUD operations, and integrating frontend and backend systems with relational databases. Completed a Django Web Development certification and delivered full-stack projects across internships and practical web applications. Eager to contribute to scalable, production-grade applications in an Agile environment.",
+  summary: "Motivated Full Stack Developer with hands-on experience developing and deploying live commercial web applications using PHP, Laravel, MySQL, React.js, Node.js, Python, Django, C#, .NET, and Git. Proven track record delivering production client platforms such as One Team One Move, The Closeout Center, and Mehta Sweet Mart. Proficient in designing scalable REST APIs, relational MySQL schemas, and building fluid responsive user experiences across all devices.",
   github: "https://github.com/MeetPanchal23",
   linkedin: "https://www.linkedin.com/in/meetpanchal2308",
   resumeUrl: "https://drive.google.com/file/d/1sCtq239T4NsWskpNiY3VDH3d7qZavRsq/view?usp=drive_link"
@@ -16,32 +16,46 @@ export const skillCategories = [
     skills: [
       { name: "React.js", level: 90 },
       { name: "JavaScript (ES6+)", level: 88 },
-      { name: "HTML5 & CSS3", level: 90 },
-      { name: "Bootstrap & Responsive UI", level: 85 }
+      { name: "HTML5 & CSS3", level: 92 },
+      { name: "Responsive Web Design", level: 90 },
+      { name: "Bootstrap & Modern UI", level: 88 }
     ]
   },
   {
     name: "Backend Development",
     skills: [
+      { name: "PHP & Laravel", level: 88 },
       { name: "Node.js & Express.js", level: 85 },
       { name: "Python & Django", level: 85 },
       { name: "C# & ASP.NET", level: 78 },
-      { name: "RESTful APIs & MVC", level: 88 },
-      { name: "JWT & Role-Based Auth", level: 85 }
+      { name: "RESTful APIs & MVC Architecture", level: 88 }
     ]
   },
   {
     name: "Database & Tools",
     skills: [
+      { name: "MySQL", level: 88 },
       { name: "SQL (SQLite / SQL Server)", level: 85 },
-      { name: "Relational Schema & Queries", level: 85 },
-      { name: "Django ORM & Dapper", level: 82 },
-      { name: "Git & Version Control", level: 85 }
+      { name: "Relational Schema & Migrations", level: 86 },
+      { name: "Git & GitHub Version Control", level: 88 }
     ]
   }
 ];
 
 export const experience = [
+  {
+    role: "Full Stack Developer (PHP & Laravel)",
+    company: "Software & Web Development Firm",
+    location: "Ahmedabad, India",
+    duration: "2026 - Present",
+    bullets: [
+      "Engineered, deployed, and maintained production-grade client web platforms and e-commerce solutions utilizing PHP, Laravel, MySQL, and Git.",
+      "Successfully built and launched commercial projects including One Team One Move (oneteamonemove.com), The Closeout Center (thecloseoutcenter.com), and Mehta Sweet Mart (mehtasweetmart.com).",
+      "Designed and optimized relational MySQL database schemas, queries, and migrations for high reliability and speed.",
+      "Implemented responsive, mobile-first frontend interfaces and integrated server-side MVC controllers and RESTful endpoints.",
+      "Managed version control workflows, feature branching, and collaborative releases using Git and GitHub."
+    ]
+  },
   {
     role: "Full Stack Developer",
     company: "Moltech PVT. LTD",
@@ -72,15 +86,39 @@ export const experience = [
 
 export const projects = [
   {
+    title: "One Team One Move",
+    description: "A production client platform developed with PHP, Laravel, and MySQL. Features dynamic service presentations, customized inquiry forms, smooth interactive sections, and high-performance responsive styling across mobile and desktop devices.",
+    category: "Laravel",
+    tags: ["PHP", "Laravel", "MySQL", "JavaScript", "Responsive Design", "Git"],
+    liveUrl: "https://oneteamonemove.com/",
+    isLive: true
+  },
+  {
+    title: "The Closeout Center",
+    description: "A comprehensive commercial inventory and closeout deals web platform built with PHP/Laravel and MySQL. Includes deal showcases, categorized product discovery, relational database queries, and optimized mobile-first performance.",
+    category: "Laravel",
+    tags: ["PHP", "Laravel", "MySQL", "E-Commerce", "Responsive UI", "Git"],
+    liveUrl: "https://thecloseoutcenter.com/",
+    isLive: true
+  },
+  {
+    title: "Mehta Sweet Mart",
+    description: "An authentic confectionery brand storefront and customer portal developed with PHP and MySQL. Features dynamic catalog browsing, corporate order inquiries, optimized asset delivery, and cross-browser responsiveness.",
+    category: "PHP",
+    tags: ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3", "Git"],
+    liveUrl: "https://mehtasweetmart.com/",
+    isLive: true
+  },
+  {
     title: "Job Application Management System",
-    description: "A full-stack recruitment and job application tracking platform with Role-Based Access Control (Candidate vs Recruiter/Admin). Built with React.js, Node.js, Express.js, and relational SQL queries. Features live keyword and location search, duplicate-safe 1-click applications, recruiter metrics dashboard with real-time SQL aggregate counters, complete job posting CRUD, and candidate status review workflows (Pending/Accepted/Rejected).",
+    description: "A full-stack recruitment and job application tracking platform with Role-Based Access Control (Candidate vs Recruiter/Admin). Built with React.js, Node.js, Express.js, and relational SQL queries. Features live keyword and location search, duplicate-safe 1-click applications, and recruiter metrics dashboard.",
     category: "React",
-    tags: ["React.js", "Node.js", "Express.js", "SQL", "JWT Auth", "REST APIs", "MVC", "RBAC"],
+    tags: ["React.js", "Node.js", "Express.js", "SQL", "JWT Auth", "REST APIs", "MVC"],
     githubUrl: "https://github.com/MeetPanchal23/Job-Application"
   },
   {
     title: "Inventory Management System",
-    description: "An enterprise-grade inventory and order management system featuring a React-based frontend and an ASP.NET Core Web API backend. Built using Dapper for high-performance database queries in SQL Server, JWT role-based authentication, and custom AES-256 payload encryption/decryption middleware for secure API communications.",
+    description: "An enterprise-grade inventory and order management system featuring a React-based frontend and an ASP.NET Core Web API backend. Built using Dapper for high-performance database queries in SQL Server, JWT role-based authentication, and AES-256 payload encryption.",
     category: ".NET",
     tags: ["C#", "ASP.NET Core", "Dapper", "SQL Server", "AES Encryption", "React.js"],
     githubUrl: "https://github.com/MeetPanchal23/InventoryManagementSystem"

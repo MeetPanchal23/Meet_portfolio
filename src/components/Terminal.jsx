@@ -34,7 +34,7 @@ const Terminal = () => {
         switch (command) {
           case 'help':
             newHistory.push({
-              text: `Available commands:\n  about      - Who is Meet Panchal?\n  skills     - Technical skillset breakdown\n  experience - Professional internship history\n  projects   - Showcase of main works\n  contact    - Email, phone, location\n  resume     - Trigger printable resume export\n  clear      - Clear terminal console`,
+              text: `Available commands:\n  about      - Who is Meet Panchal?\n  skills     - Technical skillset breakdown\n  experience - Professional work & development history\n  projects   - Showcase of main works & client projects\n  contact    - Email, phone, location\n  resume     - Trigger printable resume export\n  clear      - Clear terminal console`,
               type: 'output'
             });
             break;

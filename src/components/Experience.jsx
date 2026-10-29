@@ -8,7 +8,7 @@ const Experience = () => {
       <div className="section-header">
         <h2 className="section-title">Work History</h2>
         <div className="title-bar"></div>
-        <p className="section-subtitle">My professional internships in full stack and backend developer roles.</p>
+        <p className="section-subtitle">My professional experience in full stack, PHP/Laravel, and backend developer roles.</p>
       </div>
 
       <div className="timeline-container">

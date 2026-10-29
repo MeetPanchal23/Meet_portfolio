@@ -5,10 +5,10 @@ import { personalInfo } from '../data';
 
 const roles = [
   "Full Stack Developer",
+  "PHP & Laravel Developer",
   "React & Node.js Developer",
   "Backend & API Developer",
   "Software Developer",
-  "Frontend Developer",
   ".NET Developer",
   "Python & Django Developer"
 ];
@@ -122,9 +122,9 @@ const Hero = () => {
                     &nbsp;&nbsp;role: <span className="code-string">"Full Stack Developer"</span>,<br />
                     &nbsp;&nbsp;skills: [<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-string">"React.js"</span>, <span className="code-string">"Node.js"</span>, <span className="code-string">"Express"</span>,<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-string">"Python"</span>, <span className="code-string">"Django"</span>, <span className="code-string">"C#"</span>, <span className="code-string">".NET"</span>, <span className="code-string">"SQL"</span><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-string">"Laravel"</span>, <span className="code-string">"PHP"</span>, <span className="code-string">"MySQL"</span>, <span className="code-string">"React"</span><br />
                     &nbsp;&nbsp;],<br />
-                    &nbsp;&nbsp;experience: <span className="code-number">2</span> /* internships */,<br />
+                    &nbsp;&nbsp;experience: <span className="code-number">3</span> /* roles & client projects */,<br />
                     &nbsp;&nbsp;location: <span className="code-string">"Ahmedabad, IN"</span>,<br />
                     &nbsp;&nbsp;status: <span className="code-string">"Active & Eager to Learn"</span><br />
                     &#125;;<br /><br />
